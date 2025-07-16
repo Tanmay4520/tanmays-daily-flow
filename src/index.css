@@ -8,33 +8,55 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Productive theme colors */
+    --background: 35 20% 98%;
+    --foreground: 25 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 25 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 25 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Energizing orange-based primary */
+    --primary: 25 95% 53%;
+    --primary-foreground: 0 0% 100%;
+    --primary-soft: 25 85% 95%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Warm secondary */
+    --secondary: 35 35% 92%;
+    --secondary-foreground: 25 25% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Subtle muted tones */
+    --muted: 35 25% 95%;
+    --muted-foreground: 25 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Success green for completed tasks */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --success-soft: 142 76% 95%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Accent for highlights */
+    --accent: 200 100% 67%;
+    --accent-foreground: 0 0% 100%;
+    --accent-soft: 200 100% 95%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 35 20% 88%;
+    --input: 35 20% 88%;
+    --ring: 25 95% 53%;
+
+    /* Gradient definitions */
+    --gradient-primary: linear-gradient(135deg, hsl(25 95% 53%), hsl(35 85% 60%));
+    --gradient-success: linear-gradient(135deg, hsl(142 76% 36%), hsl(152 70% 45%));
+    --gradient-soft: linear-gradient(180deg, hsl(35 20% 98%), hsl(35 25% 95%));
+    
+    /* Shadows with theme colors */
+    --shadow-soft: 0 2px 8px hsl(25 95% 53% / 0.08);
+    --shadow-medium: 0 4px 16px hsl(25 95% 53% / 0.12);
+    --shadow-strong: 0 8px 32px hsl(25 95% 53% / 0.16);
 
     --radius: 0.5rem;
 
